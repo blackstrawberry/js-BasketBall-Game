@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  
    function grabBall(e) {
     
-    e.preventDefault();
+    // e.preventDefault();
  
     p = Particle.create(0, offsetY, 0, 0, 0);
     force = Vector.create(0,0);
@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
  
    function moveBall(e) {
     
-    e.preventDefault();
+    // e.preventDefault();
  
     getSpeed(e);
  
@@ -392,7 +392,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    
    function getSpeed(e) {
  
-    e.preventDefault();
+    // e.preventDefault();
  
     if(timestamp === null) {
      timestamp = Date.now();
@@ -417,9 +417,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     p.position.setY(getMouse(e).y - start.getY());
  
    };
- 
- 
- 
+  
+   
+
    
    function updateScore() {
     accuracy = hits / shots;
